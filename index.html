@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>منوی دیجیتال رستوران قائم</title>
+
+    <meta name="description" content="منوی دیجیتال رستوران قائم؛ مشاهده انواع کباب، غذاهای ایرانی، پلو و غذاهای دریایی.">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- سربرگ سایت -->
+    <header class="site-header">
+        <div class="header-container">
+
+            <a href="#" class="brand">
+                <span class="brand-icon">ق</span>
+
+                <span class="brand-text">
+                    <strong>رستوران قائم</strong>
+                    <small>طعم اصیل غذای ایرانی</small>
+                </span>
+            </a>
+
+            <a href="#menu" class="header-button">
+                مشاهده منو
+                <span>←</span>
+            </a>
+
+        </div>
+    </header>
+
+
+    <!-- بخش معرفی رستوران -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                کیفیت، اصالت، طعم ماندگار
+            </span>
+
+            <h1>
+                طعم به‌یادماندنی،
+                <br>
+                کیفیتی ماندگار
+            </h1>
+
+            <p>
+                از عطر کباب تازه تا طعم غذاهای اصیل ایرانی؛
+                انتخابی خوشمزه برای لحظه‌های شما.
+            </p>
+
+            <a href="#menu" class="hero-button">
+                مشاهده غذاها
+                <span>←</span>
+            </a>
+
+        </div>
+
+        <div class="hero-decoration" aria-hidden="true">
+            <span>QAEM</span>
+            <span class="hero-decoration-line"></span>
+            <span>EST. WITH LOVE</span>
+        </div>
+
+    </section>
+
+
+    <!-- منوی غذاها -->
+    <main id="menu" class="menu-container">
+
+        <div class="section-heading">
+
+            <span class="section-eyebrow">
+                انتخابی برای هر سلیقه
+            </span>
+
+            <h2>منوی رستوران</h2>
+
+            <p>
+                غذای مورد علاقه‌تان را پیدا کنید.
+            </p>
+
+            <span class="heading-decoration"></span>
+
+        </div>
+
+
+        <!-- جست‌وجوی غذا -->
+        <div class="search-wrapper">
+
+            <span class="search-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="21" height="21" fill="none">
+                    <circle cx="10.8" cy="10.8" r="6.8"
+                            stroke="currentColor" stroke-width="1.8"/>
+                    <path d="M16 16L21 21"
+                          stroke="currentColor" stroke-width="1.8"
+                          stroke-linecap="round"/>
+                </svg>
+            </span>
+
+            <input
+                type="search"
+                id="search-input"
+                placeholder="نام غذای مورد نظر را بنویسید..."
+                autocomplete="off"
+                aria-label="جست‌وجوی غذا"
+            >
+
+        </div>
+
+
+        <!-- دسته‌بندی‌ها -->
+        <nav class="category-filters" aria-label="دسته‌بندی غذاها">
+
+            <button
+                type="button"
+                class="category-btn active"
+                data-category="all">
+                همه غذاها
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="کباب‌ها">
+                کباب‌ها
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="غذاهای ایرانی">
+                غذاهای ایرانی
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="انواع پلو">
+                انواع پلو
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="غذاهای محلی و دریایی">
+                غذاهای محلی و دریایی
+            </button>
+
+            <button
+                type="button"
+                class="category-btn"
+                data-category="غذای اقتصادی">
+                غذای اقتصادی
+            </button>
+
+        </nav>
+
+
+        <!-- تعداد غذاها -->
+        <div class="menu-summary">
+            <span id="food-count">در حال بارگذاری منو...</span>
+        </div>
+
+
+        <!-- غذاها توسط JavaScript نمایش داده می‌شوند -->
+        <div id="food-sections"></div>
+
+
+        <!-- پیام زمانی که غذا پیدا نمی‌شود -->
+        <div id="empty-state" hidden>
+            <div class="empty-icon">🍽️</div>
+
+            <h3>غذایی پیدا نشد!</h3>
+
+            <p>
+                نام غذا را تغییر دهید یا دسته‌بندی دیگری را انتخاب کنید.
+            </p>
+        </div>
+
+    </main>
+
+
+    <!-- پاورقی سایت -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <div class="footer-brand">
+                <span class="brand-icon">ق</span>
+
+                <div>
+                    <strong>رستوران قائم</strong>
+                    <p>طعم خوب غذا، خاطره‌ای ماندگار</p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <p class="footer-copy">
+                منوی دیجیتال رستوران قائم
+            </p>
+             <p class="footer-copy">
+     ادرس: بندرعباس شهرک نیایش ، بلوار شهدای خلیج فارس ، آشپزخانه قائم
+    شماره تماس :09033615555_09178631166
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- فایل JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
