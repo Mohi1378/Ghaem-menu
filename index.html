@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101d32">
+  <title>کترینگ قائم | منوی دیجیتال</title>
+  <meta name="description" content="منوی دیجیتال کترینگ قائم؛ تجربه‌ای از طعم اصیل غذاهای ایرانی">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- سربرگ -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand">
+        <span class="brand-icon">ق</span>
+        <span class="brand-text">
+          <strong>کترینگ قائم</strong>
+          <small>طعم اصیل غذای ایرانی</small>
+        </span>
+      </a>
+      <a href="#menu" class="header-button">
+        مشاهده منو <span>←</span>
+      </a>
+    </div>
+  </header>
+  <!-- بخش ویدئو -->
+  <section class="hero">
+    <video
+      class="hero-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      preload="metadata"
+      aria-label="ویدئوی معرفی کترینگ قائم"
+    >
+      <source src="hero.mp4" type="video/mp4">
+      مرورگر شما از پخش ویدئو پشتیبانی نمی‌کند.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="hero-label">QAEM CATERING</span>
+      <h1>کترینگ قائم</h1>
+      <p>طعم اصیل غذای ایرانی، با کیفیتی که می‌ماند</p>
+      <a href="#menu" class="hero-button">
+        دیدن منوی غذاها
+        <span>←</span>
+      </a>
+    </div>
+    <div class="hero-decoration">
+      <span>QAEM</span>
+      <span>MADE WITH CARE</span>
+    </div>
+  </section>
+  <!-- منوی غذاها -->
+  <main id="menu" class="menu-container">
+    <div class="section-heading">
+      <span class="section-eyebrow">منوی کترینگ قائم</span>
+      <h2>طعم دلخواهت رو انتخاب کن</h2>
+      <p>
+        از غذاهای اصیل ایرانی تا کباب‌های خوش‌عطر؛
+        منوی ما رو ببین.
+      </p>
+    </div>
+    <!-- جست‌وجوی غذا -->
+    <div class="menu-search">
+      <input
+        type="search"
+        id="search-input"
+        placeholder="اسم غذای موردنظرت رو بنویس..."
+        aria-label="جست‌وجوی غذا"
+      >
+    </div>
+    <!-- دسته‌بندی‌ها -->
+    <div class="category-buttons">
+      <button class="category-btn active" data-category="all">
+        همه غذاها
+      </button>
+      <button class="category-btn" data-category="کباب‌ها">
+        کباب‌ها
+      </button>
+      <button class="category-btn" data-category="غذاهای ایرانی">
+        غذاهای ایرانی
+      </button>
+      <button class="category-btn" data-category="انواع پلو">
+        انواع پلو
+      </button>
+      <button class="category-btn" data-category="غذاهای محلی و دریایی">
+        غذاهای محلی و دریایی
+      </button>
+      <button class="category-btn" data-category="غذای اقتصادی">
+        غذای اقتصادی
+      </button>
+    </div>
+    <!-- تعداد غذاها -->
+    <div class="menu-meta">
+      <span id="food-count"></span>
+    </div>
+    <!-- غذاها توسط JavaScript نمایش داده می‌شوند -->
+    <div id="food-sections"></div>
+    <!-- پیام جست‌وجوی بدون نتیجه -->
+    <div id="empty-state" style="display: none;">
+      <p>غذایی با این مشخصات پیدا نشد.</p>
+    </div>
+  </main>
+  <!-- پابرگ -->
+   <!-- پابرگ و اطلاعات تماس -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-heading">
+      <h2>کترینگ قائم</h2>
+      <p>طعم اصیل غذای ایرانی، برای لحظه‌های خوشمزه</p>
+    </div>
+    <div class="footer-contact">
+      <div class="contact-item">
+        <span class="contact-icon">⌖</span>
+        <div>
+          <h3>آدرس کترینگ</h3>
+          <p> بندرعباس شهرک نیایش ، بلوار شهدای خلیج فارس ، آشپزخانه قائم</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span class="contact-icon">☎</span>
+        <div>
+          <h3>شماره تماس و سفارش</h3>
+          <a href="tel:09033615555">09178631166</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>برای سفارش و دریافت اطلاعات با ما تماس بگیرید.</span>
+      <span>کترینگ قائم</span>
+    </div>
+  </div>
+</footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">ق</span>
+        <div>
+          <strong>کترینگ قائم</strong>
+          <p>طعم اصیل غذای ایرانی</p>
+        </div>
+      </div>
+      <div class="footer-copy">
+        منوی دیجیتال کترینگ قائم
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
